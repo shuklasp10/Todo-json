@@ -1,6 +1,12 @@
 import { readFileSync, writeFileSync} from 'fs';
+import path from 'path';
+import {fileURLToPath} from 'url'
 
-const PATH = './Data/todo.json';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const PATH = path.join(__dirname,"..","Data","todo.json");
+//const PATH = './Data/todo.json';
 
 const fetchTodo = () =>{
     const Todo = readFileSync(PATH);
