@@ -1,4 +1,4 @@
 // this is api url for backnend requests and responses
-const URL = "http://localhost:5000/todo"
+const URL = "todo-backend-shuklasp.vercel.app"
 
 export default URL;
